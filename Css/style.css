@@ -1,0 +1,391 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #FFF8DC;
+    padding: 0;
+    margin: 0;
+}
+
+/* Typography Scale */
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #B22222;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #8B4513;
+    margin: 1.5rem 0 1rem 0;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #8B4513;
+    margin: 1rem 0;
+}
+
+p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #8B4513;
+    padding: 1rem 0;
+}
+
+nav table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+nav td {
+    padding: 0.5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #A0522D;
+}
+
+/* Layout Structure - CSS Grid for Main Content */
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(135deg, #8B4513 0%, #A0522D 100%);
+    color: white;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+}
+
+th, td {
+    padding: 1rem;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #FFD700;
+    color: #333;
+    font-weight: 600;
+}
+
+tr:nth-child(even) {
+    background-color: #FFF5CC;
+}
+
+tr:hover {
+    background-color: #FFEBB9;
+}
+
+/* Form Styles */
+form {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+input[type="submit"], input[type="reset"] {
+    background-color: #B22222;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    margin-right: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: #8B0000;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    width: auto;
+    margin-right: 0.5rem;
+}
+
+/* Image Styles */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Footer Styles */
+footer {
+    background-color: #8B4513;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Horizontal Rule Styles */
+hr {
+    border: none;
+    height: 4px;
+    background-color: #FFD700;
+    margin: 2rem 0;
+}
+
+/* Center Alignment Utility */
+.center {
+    text-align: center;
+}
+
+/* Color Scheme Classes */
+.primary-color { color: #B22222; }
+.secondary-color { color: #8B4513; }
+.accent-color { color: #FFD700; }
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #B22222;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #8B0000;
+}
+
+/* Responsive Design - Media Queries */
+
+/* Tablet Styles */
+@media (min-width: 768px) and (max-width: 1023px) {
+    body {
+        font-size: 15px;
+    }
+    
+    h1 {
+        font-size: 2.25rem;
+    }
+    
+    h2 {
+        font-size: 1.75rem;
+    }
+    
+    main {
+        grid-template-columns: 1fr;
+        padding: 1.5rem;
+        gap: 1.5rem;
+    }
+    
+    nav a {
+        font-size: 1rem;
+        padding: 0.4rem 0.8rem;
+    }
+    
+    /* Two-column layout for contact page on tablet */
+    .contact-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    h3 {
+        font-size: 1.25rem;
+    }
+    
+    main {
+        padding: 1rem;
+        gap: 1rem;
+    }
+    
+    /* Navigation becomes vertical on mobile */
+    nav table {
+        display: block;
+    }
+    
+    nav tr {
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+    
+    nav td {
+        display: block;
+        text-align: center;
+        padding: 0.5rem;
+    }
+    
+    nav a {
+        display: block;
+        padding: 0.75rem;
+        font-size: 1rem;
+    }
+    
+    /* Single column layout for tables on mobile */
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+    
+    /* Stack form elements vertically */
+    form table {
+        display: block;
+    }
+    
+    form tr {
+        display: block;
+        margin-bottom: 1rem;
+    }
+    
+    form td {
+        display: block;
+        padding: 0.5rem 0;
+    }
+    
+    /* Contact page single column on mobile */
+    .contact-container {
+        display: block;
+    }
+    
+    /* Adjust iframe size for mobile */
+    iframe {
+        height: 250px;
+    }
+}
+
+/* Large Desktop Styles */
+@media (min-width: 1200px) {
+    main {
+        max-width: 1400px;
+    }
+    
+    body {
+        font-size: 17px;
+    }
+}
+
+/* Print Styles */
+@media print {
+    nav, footer {
+        display: none;
+    }
+    
+    body {
+        background-color: white;
+        color: black;
+        font-size: 12pt;
+    }
+    
+    a {
+        color: black;
+        text-decoration: underline;
+    }
+}
+
+/* Accessibility Features */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* High Contrast Mode Support */
+@media (prefers-contrast: high) {
+    body {
+        background-color: white;
+        color: black;
+    }
+    
+    nav {
+        background-color: black;
+    }
+    
+    a {
+        color: #0000EE;
+    }
+}
+
+/* Focus styles for accessibility */
+a:focus, button:focus, input:focus, select:focus, textarea:focus {
+    outline: 2px solid #B22222;
+    outline-offset: 2px;
+}
+
+/* Loading animation for images */
+img {
+    transition: opacity 0.3s ease;
+}
+
+img[src] {
+    opacity: 1;
+}
+
+img:not([src]) {
+    opacity: 0;
+}

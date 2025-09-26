@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reviews </title> 
+   <!-- Link to external CSS for styling -->
+  <link rel="stylesheet" href="Css/style.css">
+</head> 
+<body bgcolor="#FFF8DC"> 
+  <header>
+ <!-- Navigation -->
+<nav>
+  <table width="100%" cellpadding="8" cellspacing="0" border="0" bgcolor="#8B4513">
+    <tr>
+      <td align="center"><a href="index.html"><font color="white">Home</font></a></td>
+      <td align="center"><a href="about.html"><font color="white">About Us</font></a></td>
+      <td align="center"><a href="products.html"><font color="white">Products & Services</font></a></td>
+      <td align="center"><a href="reviews.html"><font color="white">Reviews</font></a></td>
+      <td align="center"><a href="contact.html"><font color="white">Contact</font></a></td>
+    </tr>
+  </table>
+</nav> 
+
+</header>
+
+<main>
+  <h1><font color="#B22222">Customer Reviews</font></h1>
+  <p>Real feedback from happy customers.</p>
+</main>
+
+<table width="85%" align="center" cellpadding="10" border="1" bgcolor="#FFF5CC">
+  <tr><td>
+    <fieldset>
+      <legend><b>Thabo</b> — ★★★★★</legend>
+      Fresh, tasty and filling! Best Kota in town.
+    </fieldset>
+  </td></tr>
+  <tr><td>
+    <fieldset>
+      <legend><b>Lebo</b> — ★★★★☆</legend>
+      Loved the Full House. Great value.
+    </fieldset>
+  </td></tr>
+  <tr><td>
+    <fieldset>
+      <legend><b>Asanda</b> — ★★★★★</legend>
+      Fast service and delicious sauces.
+    </fieldset>
+  </td></tr>
+</table>
+
+<br>
+<!-- Review form -->
+<main><h2><font color="#8B4513">Leave a Review</font></h2></main>
+<form action="mailto:hello@mamzoskota.co.za" method="post" enctype="text/plain">
+  <table width="85%" align="center" cellpadding="6" cellspacing="0" border="0">
+    <tr><td><b>Name</b></td><td><input type="text" name="name" required></td></tr>
+    <tr><td><b>Rating</b></td>
+        <td>
+          <select name="rating" required>
+            <option>5 - Excellent</option>
+            <option>4 - Good</option>
+            <option>3 - Okay</option>
+            <option>2 - Poor</option>
+            <option>1 - Bad</option>
+          </select>
+        </td></tr>
+    <tr><td><b>Your Review</b></td><td><textarea name="review" rows="4" cols="40" required></textarea></td></tr>
+    <tr><td></td><td><input type="submit" value="Submit Review"> <input type="reset" value="Clear"></td></tr>
+  </table>
+</form> 
+
+<footer>
+  
+</footer>
+  
+</body>
+</html>

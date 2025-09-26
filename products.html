@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product and service</title>
+  <!-- Link to external CSS for styling --> 
+  <link rel="stylesheet" href="Css/style.css">
+</head> 
+<body bgcolor="#FFF8DC"> 
+<!-- Navigation -->
+<header>
+<nav>
+  <table width="100%" cellpadding="8" cellspacing="0" border="0" bgcolor="#8B4513">
+    <tr>
+      <td align="center"><a href="index.html"><font color="white">Home</font></a></td>
+      <td align="center"><a href="about.html"><font color="white">About Us</font></a></td>
+      <td align="center"><a href="products.html"><font color="white">Products & Services</font></a></td>
+      <td align="center"><a href="reviews.html"><font color="white">Reviews</font></a></td>
+      <td align="center"><a href="contact.html"><font color="white">Contact</font></a></td>
+    </tr>
+  </table>
+</nav>
+</header> 
+<main>
+<!-- Heading -->
+<center>
+  <h1><font color="#B22222">Products & Services</font></h1>
+  <img src="Images/kota-1.jpg" width="600" alt="Kota image">
+  <p>We make fresh, generous Kotas and sides daily.</p>
+</center>
+<!-- Kota Menu Table -->
+<hr color="#B22222" size="3">
+
+<center><h2><font color="#8B4513">Kota Menu</font></h2></center>
+<table border="1" cellpadding="8" cellspacing="0" width="85%" align="center" bgcolor="#FFF5CC">
+  <tr bgcolor="#FFD700">
+    <th>Item</th><th>Description</th><th>Price (R)</th>
+  </tr>
+   <!-- Example menu items -->
+  <tr>
+    <td>Classic Kota</td><td>Bread loaf quarter, chips, polony, atchar, cheese & sauces</td><td>35</td>
+  </tr>
+  <tr>
+    <td>Russian Kota</td><td>Classic base + Russian sausage</td><td>45</td>
+  </tr>
+  <tr>
+    <td>Dagwood Kota</td><td>Classic base + fried egg, cheese slice</td><td>48</td>
+  </tr>
+  <tr>
+    <td>Full House Kota</td><td>Russian, egg, cheese, beef patty & extra chips</td><td>65</td>
+  </tr>
+  <tr>
+    <td>Steak Kota</td><td>Classic base + grilled steak strips</td><td>70</td>
+  </tr>
+  <tr>
+    <td>Chicken Kota</td><td>Classic base + spicy chicken</td><td>55</td>
+  </tr>
+</table>
+ <!-- Order Form -->
+<br>
+
+<center><h2><font color="#8B4513">Place an Order</font></h2></center>
+<form action="mailto:orders@mamzoskota.co.za" method="post" enctype="text/plain">
+  <table width="85%" align="center" cellpadding="6" cellspacing="0" border="0">
+    <tr><td><b>Full Name</b></td><td><input type="text" name="name" required></td></tr>
+    <tr><td><b>Phone</b></td><td><input type="tel" name="phone" required></td></tr>
+   <!-- Kota dropdown -->
+    <tr><td><b>Kota Choice</b></td>
+        <td>
+          <select name="kota">
+            <option>Classic Kota</option>
+            <option>Russian Kota</option>
+            <option>Dagwood Kota</option>
+            <option>Full House Kota</option>
+            <option>Steak Kota</option>
+            <option>Chicken Kota</option>
+          </select>
+        </td></tr>
+         <!-- Extras -->
+    <tr><td><b>Extras</b></td>
+        <td>
+          <input type="checkbox" name="extra_cheese"> Extra cheese
+          <input type="checkbox" name="extra_egg"> Egg
+          <input type="checkbox" name="extra_russian"> Russian
+          <input type="checkbox" name="extra_atchar"> Atchar
+        </td></tr>
+    <tr><td><b>Quantity</b></td><td><input type="number" name="qty" min="1" value="1"></td></tr>
+    <tr><td><b>Order Type</b></td>
+        <td>
+          <input type="radio" name="type" value="Pickup" checked> Pickup
+          <input type="radio" name="type" value="Delivery"> Delivery
+        </td></tr>
+        <!-- Submit buttons -->
+    <tr><td><b>Address (if delivery)</b></td><td><textarea name="address" rows="3" cols="40"></textarea></td></tr>
+    <tr><td><b>Preferred Time</b></td><td><input type="time" name="time"></td></tr>
+    <tr><td><b>Notes</b></td><td><textarea name="notes" rows="3" cols="40"></textarea></td></tr>
+    <tr><td></td><td><input type="submit" value="Send Order"> <input type="reset" value="Clear"></td></tr>
+  </table>
+</form> 
+</main>
+<footer>
+&copy;ST10456358
+</footer>
+  
+</body>
+</html>
